@@ -4,22 +4,20 @@ const logger = {
   info(message) {
     logs.push({
       level: "INFO",
-      message,
-      timestamp: new Date().toISOString(),
+      message
     });
   },
 
   error(message) {
     logs.push({
       level: "ERROR",
-      message,
-      timestamp: new Date().toISOString(),
+      message
     });
   },
 
   getLogs() {
     return logs;
-  },
+  }
 };
 
-export default logger;
+module.exports = logger;
